@@ -1,0 +1,49 @@
+#This file is the configuration of the webtop deploy script
+
+# define tomcat home location
+export tomcatDir=${tomcatDir:-/opt/imail1/tomcat-8080/webtop/}
+
+# define build dir
+export buildDir=${buildDir:-/opt/imail1/build/}
+
+# define the webtop host
+export webtopHost=${webtopHost:-http://172.26.204.232:8080/}
+
+# define the pab server host ip
+export pabHost=${pabHost:-172.26.203.55}
+
+# define the cal server host ip
+export calHost=${calHost:-172.26.203.55}
+
+# define the smtp server host ip
+export smtpHost=${smtpHost:-172.26.203.55}
+
+# define the imap server host ip
+export imapHost=${imapHost:-172.26.203.55}
+
+# define the media server host ip
+export mediaServerHost=${mediaServerHost:-172.26.204.174}
+
+# define the ldap server host ip
+export ldapHost=${ldapHost:-172.26.203.55}
+
+# define the calendar port
+export calPort=${imapPort:-5229}
+
+# define the smtp port
+export smtpPort=${smtpPort:-25}
+
+# define the imap port
+export imapPort=${imapPort:-143}
+
+# define the media server port
+export mediaServerPort=${mediaServerPort:-8080}
+
+# define the tomcat manager name
+export tomcatManager=${tomcatManager:-admin}
+
+# define the tomcat manager name
+export tomcatManagerPwd=${tomcatManagerPwd:-admin}
+
+# define tomcat process keyword
+export tomcatProcess=${tomcatProcess:-tomcat-8080}
